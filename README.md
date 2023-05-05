@@ -1,7 +1,7 @@
 **SOBRE O QUE É O PROJETO?**
 ========================================================================
 O objetivo do projeto é servir de base para o treinamento de "Formação Java/Angular para Jovens Profissionais", da Indra, unidade de João Pessoa, 
-ministrado por Leonardo Mattos(larrudam@minsait.com) e Rafael Ferreira (rferreiraa@indracompany.com)
+ministrado por Deynne de Andrade Silva(dandrades@minsait.com) e Augusto Henrique Oliveira dos Anjos (ahenriqueo@minsait.com)
 
 
 **Conteúdo do Treinamento**
@@ -17,58 +17,76 @@ ministrado por Leonardo Mattos(larrudam@minsait.com) e Rafael Ferreira (rferreir
 - Spring Data 
 - MySQL
 
+**REQUISITOS**
+========================================================================
+- git
+    - download: https://git-scm.com/downloads
+
+- java 11 
+    - download: https://jdk.java.net/archive/
+
+- IDE para desenvolvimento em java (recomendados Eclipse 2023-03 ou Spring Tools Suite)
+    - eclipse: https://www.eclipse.org/downloads/
+    - sts: https://spring.io/tools
+
+- maven (recomendado: v3.8.8)
+    - download: https://dlcdn.apache.org/maven/maven-3/3.8.8/binaries/
+
+- lombok
+    - download: https://projectlombok.org/download
+
+- mysql (opcional)
+    - download: https://dev.mysql.com/downloads/
 
 **COMO CONSTRUIR O AMBIENTE**
 ========================================================================
 
-Baixar e instalar o Lombok na sua IDE em https://projectlombok.org/download.
-Acessar o diretório onde o lombok.jar foi baixado e executar no terminal: java -jar lombok.jar.
-Na janela de instalação, especificar o caminho onde se encontra sua IDE e concluir a instalação.
+* Instalar git
+    - Seguir o processo de instação. 
+    - No fim do processo é possível executar no terminal o comando git --version para verificar se a instação
+      ocorreu corretamente.
 
-Caso não consiga instalar através da interface, copiar o lombok.jar para o diretório do eclipse e editar o arquivo eclipse.ini e incluir a linha abaixo no final do arquivo:
+* Instalar java
+    - extrair os arquivos no diretório desejado (Recomendo a raiz do disco C:\ no windows ou /opt/ no linux)
+    - Adicionar variável JAVA_HOME com a raiz do java (ex: JAVA_HOME=C:\openjdk-11)
+    - Adicionar o caminho da pasta bin do java à variavel ambiente PATH (ex: PATH =$JAVA_HOME\bin;$PATH)
 
--javaagent:/DIRETÓRIO_QUE_VOCE_COPIOU_O_LOMBOK.JAR/lombok.jar
+* Instalar maven
+    - instalação depende do java
+    - extrair arquivo em diretório desejado (Recomendo a raiz do disco C:\ no windows ou /opt/ no linux).
+    - Adicionar a variável de ambiente M3_HOME com a raiz do maven (ex: M3_HOME=C:\apache-maven-3.8.8)
+    - Adicionar o caminho da pasta bin do maven à variavel ambiente PATH (ex: PATH =$M3_HOME\bin;$PATH)
+    - Testar em terminal com o comando mvn -v
 
-**Back-End**
+* Instalar IDE
+  - Seguir processo de instalação
+  - no eclipse selecionar a opção Eclipse IDE for Java Developers
 
-	Primeiramente deve-se clonar o repositório no endereço:
-	
-	https://github.com/efmendes/treinamento_202209.git
-	
-	
-	
-	Após o projeto ser clonado, abra o terminal no diretório clonado **treinamento**
-	e utilize os seguintes comandos:
+* Instalar Lombok
+    - instalação depende do java
+    - Baixar o Lombok 
+    - Acessar o diretório onde o lombok.jar foi baixado e executar no terminal: java -jar lombok.jar.
+    - Na janela de instalação, especificar o caminho onde se encontra sua IDE e concluir a instalação.
+    - Caso não consiga instalar através da interface, copiar o lombok.jar para o diretório do eclipse e editar o 
+      arquivo eclipse.ini e incluir a linha abaixo no final do arquivo:
 
-	
-	mvn install
-	../treinamento-controller/target
-	java -jar treinamento.war
-	
-	
-**É de suma importância aguardar a execução dos comandos acima citados.**
+* Configurar projeto
+    - clonar projeto do repositório (git clone https://github.com/Deynne/treinamento-23-05.git)
+    - no diretório do projeto executar o comando __mvn -U clean install__
+    - importar projeto na ide como um projeto maven
 
-========================================================================
-
-
-Para acesso à sua API desenvolvida, utilize o endereço: http://localhost:8080/treinamento
+* Executar projeto
+    - executar o comando __java -jar treinamento-controller/target/treinamento.war__
+    **É de suma importância aguardar a execução dos comandos acima citados.**
 
 
+**Para acesso à sua API desenvolvida, utilize o endereço: http://localhost:8080/treinamento**
 
-
-Voce pode desenvolver utilizando os recursos abaixo:
-========================================================================
-- Java 11
-- Maven
 
 Banco de dados
 ==========================================================================
-
-Como acessar o client do MySQL:
-
-	
+Um banco de dados foi disponibilizado para uso durante o treinamento. Ele é um banco mysql e pode ser acessado através da seguinte url: http://31.220.109.68/phpmyadmin/
+    
 JDBC URL: jdbc:mysql://31.220.109.68:3306/treinamentoindra
-
 Usuário: treinamentoindra
-
 Senha: treinamentoindra

@@ -145,6 +145,4 @@ public class GenericEntity<I> implements Persistable<I>, Serializable {
     final Validator validator = factory.getValidator();
     return validator.validate(this);
   }
-
-
 }

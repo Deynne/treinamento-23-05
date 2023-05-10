@@ -8,10 +8,9 @@ public class MyClass {
         
         while(sc1.hasNext() && contadorDeLimite < 2 ){
             soma = soma + Integer.parseInt(sc1.next());
-            System.out.println("Contador = " + Integer.toString(contadorDeLimite));
             contadorDeLimite++;
         }
-        System.out.println("Soma = " + Integer.toString(soma));        
+        System.out.println("\nSoma = " + Integer.toString(soma));        
     }
     
 }

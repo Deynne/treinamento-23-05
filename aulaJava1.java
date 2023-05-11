@@ -1,23 +1,22 @@
 import java.util.Scanner;
  
-public class MyClass {
+public class aulaJava1 {
     
  
     public static void main(String args[]) {
         Scanner sc1 = new Scanner(System.in);
         
         int soma = 0;
+ 
         
         int contadorDeLimite = 0;
         
-        
         while(sc1.hasNext() && contadorDeLimite < 2) {
-            
-            soma = soma + Integer.parseInt(sc1.next());
+            soma = soma + sc1.nextInt();
             contadorDeLimite++;
-            
-            
         }
-        System.out.println("Soma: " + soma);
+        
+        System.out.println(soma =+ soma);
+        
     }
 }

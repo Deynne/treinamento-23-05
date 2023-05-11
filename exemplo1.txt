@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //import java.util.Scanner;
  
 public class MyClass {
@@ -25,3 +26,11 @@ public class MyClass {
         
     }
 }//
+=======
+Olá mundo
+Olá turma!
+Boa noite.
+São 18:37
+claudinez
+noite
+>>>>>>> 2733276b79879016ee21408bc81e4ee6049a3c22

@@ -5,6 +5,7 @@ public class Exercicio1 {
         int soma = 0;
         
         int contadorDeLimite = 0;
+
         while(sc1.hasNext() && contadorDeLimite < 2) {
             soma = soma + sc1.nextInt();
             contadorDeLimite++;

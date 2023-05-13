@@ -14,7 +14,7 @@ public class exercicio3 {
     }
 
     if ((((numero)%12 == 1) || ((numero)%12 == 5) || ((numero)%12 == 7) || ((numero)%12 == 11)) && (numero > 12)){
-      for (int k = 3; k <= numero / 2; k++) {
+      for (int k = 3; k <= numero / 2; k += 2) {
         if (numero % k == 0) {
           primo = false;
           break;

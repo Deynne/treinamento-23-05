@@ -1,7 +1,7 @@
 import java.util.Scanner;
-public class ParOuImpar {
+public class Exercicio02 {
     public static void main(String args[]) {
-        // Digite um número no Stdin Inputs
+        // Digite um numero no Stdin Inputs
         Scanner sc1 = new Scanner(System.in);
         int numero = sc1.nextInt();
 

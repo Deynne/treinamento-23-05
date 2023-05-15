@@ -1,0 +1,81 @@
+public static void main(String[] args) {
+		for (int i = 0; i <= 1000; i++) {
+            System.out.println(i);
+		}
+			
+		int numero = 67; 
+        
+        if (numero % 2 == 0) {
+            System.out.println(numero + " é par");
+        } else {
+            System.out.println(numero + " é impar");
+        }
+		
+        int numero2 = 37; 
+        
+        boolean primo = true;
+        
+        if (numero2 <= 1) {
+            primo = false;
+        } else {
+            for (int i = 2; i <= Math.sqrt(numero2); i++) {
+                if (numero2 % i == 0) {
+                	primo = false;
+                    break;
+                }
+            }
+        }
+        
+        if (primo) {
+            System.out.println(numero2 + " é primo");
+        } else {
+            System.out.println(numero2 + " não é primo");
+        }
+        
+       
+        int conta = 0;
+        
+        for (int numero3 = 2; numero3 <= 1000; numero3++) {
+            boolean primo2 = true;
+            
+            if (numero3 <= 1) {
+            	primo2 = false;
+            } else {
+                for (int i = 2; i <= Math.sqrt(numero3); i++) {
+                    if (numero3 % i == 0) {
+                    	primo2 = false;
+                        break;
+                    }
+                }
+            }
+            
+            if (primo2) {
+            	conta++;
+            }
+        }
+        
+        System.out.println("A contagem de números primos de 2 to 1000 é: " + conta);
+        
+        
+        boolean alternar = true;
+        int previaNumero = 0;
+        
+        for (int j = 0; j <= 1000; j++) {
+            if (j % 2 == 0) {
+                System.out.println("Olá Mundo!");
+            } else if (j % 3 == 0) {
+                int soma = j + previaNumero;
+                System.out.println(soma);
+                previaNumero = j;
+            } else if (j % 5 == 0) {
+                int quadrado = j * j;
+                System.out.println(quadrado);
+            } else if (j % 7 == 0) {
+                System.out.println(alternar);
+                alternar = !alternar;
+            } else {
+                System.out.println(j);
+            }
+        
+            }
+	}

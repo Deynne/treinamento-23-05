@@ -1,3 +1,5 @@
+import java.lang.Math;
+
 public class exercicio4 {
   
   /*Defini uma função para veriticar se um numero é primo ou não e outra para imprimir o resultado da verificação; */
@@ -13,7 +15,7 @@ public class exercicio4 {
     }
 
     if ((((numero)%12 == 1) || ((numero)%12 == 5) || ((numero)%12 == 7) || ((numero)%12 == 11)) && (numero > 12)){
-      for (int k = 3; k <= numero / 2; k += 2) {
+      for (int k = 3; k <= Math.sqrt(numero); k += 2) {
         if (numero % k == 0) {
           primo = false;
           break;

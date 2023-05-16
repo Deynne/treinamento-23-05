@@ -15,8 +15,6 @@ public class Exercicio02
         }
         else {
         	System.out.println(Integer.toString(numero)+" é um numero ÍMPAR");
-        }
-        ;        
-    	
+        }    	
     }
 }

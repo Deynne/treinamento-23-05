@@ -6,7 +6,8 @@ import java.lang.Math;
 public class Exercicio03 
 {
 	public static void main( String[] args )
-    {	boolean ehPrimo = true;
+    {
+		boolean ehPrimo = true;
 		System.out.println("Digite um número: ");
         Scanner sc1 = new Scanner(System.in);
         int numero = Integer.parseInt(sc1.next());

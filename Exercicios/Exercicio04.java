@@ -5,8 +5,8 @@ import java.lang.Math;
 public class Exercicio04
 {
 	public static void main( String[] args )
-    {	boolean ehPrimo = true;
-
+    {
+		boolean ehPrimo = true;
         int numero = 0;
         int conta = 0;
         for(int j = 2; j < 1000; j++) {

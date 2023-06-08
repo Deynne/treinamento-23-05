@@ -1,15 +1,10 @@
 import java.util.Scanner;
 
-public class MyClass{
+public class Exercicio1 {
     
-    public static int soma (int a, int b){
-        return a + b;
-}
-
+    
     public static void main(String args[]){
         Scanner sc1 = new Scanner(System.in);
-        
-        soma(1,2);
         
         int soma = 0;
         
